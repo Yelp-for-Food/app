@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		637C4D0325D2F8EC00D0C3B2 /* ExploreCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637C4D0225D2F8EC00D0C3B2 /* ExploreCardView.swift */; };
 		638C6E2525D256F300746372 /* yelp_for_foodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C6E2425D256F300746372 /* yelp_for_foodApp.swift */; };
 		638C6E2725D256F300746372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C6E2625D256F300746372 /* ContentView.swift */; };
 		638C6E2925D256F300746372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C6E2825D256F300746372 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		637C4D0225D2F8EC00D0C3B2 /* ExploreCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCardView.swift; sourceTree = "<group>"; };
 		638C6E2125D256F300746372 /* yelp-for-food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yelp-for-food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638C6E2425D256F300746372 /* yelp_for_foodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yelp_for_foodApp.swift; sourceTree = "<group>"; };
 		638C6E2625D256F300746372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				638C6E2425D256F300746372 /* yelp_for_foodApp.swift */,
 				638C6E2625D256F300746372 /* ContentView.swift */,
+				637C4D0225D2F8EC00D0C3B2 /* ExploreCardView.swift */,
 				638C6E2825D256F300746372 /* Assets.xcassets */,
 				638C6E2D25D256F300746372 /* Info.plist */,
 				638C6E2A25D256F300746372 /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				638C6E2725D256F300746372 /* ContentView.swift in Sources */,
 				638C6E2525D256F300746372 /* yelp_for_foodApp.swift in Sources */,
+				637C4D0325D2F8EC00D0C3B2 /* ExploreCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
