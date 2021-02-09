@@ -1,6 +1,6 @@
 //
-//  spd_1_3_group_projectApp.swift
-//  spd-1.3-group-project
+//  yelp_for_foodApp.swift
+//  yelp-for-food
 //
 //  Created by Alberto Dominguez on 2/8/21.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct spd_1_3_group_projectApp: App {
+struct yelp_for_foodApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

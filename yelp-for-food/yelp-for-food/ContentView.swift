@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  spd-1.3-group-project
+//  yelp-for-food
 //
 //  Created by Alberto Dominguez on 2/8/21.
 //

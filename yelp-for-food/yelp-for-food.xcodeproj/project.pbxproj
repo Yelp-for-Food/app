@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63ADFAFE25D2547100C3C1F6 /* spd_1_3_group_projectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADFAFD25D2547100C3C1F6 /* spd_1_3_group_projectApp.swift */; };
-		63ADFB0025D2547100C3C1F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63ADFAFF25D2547100C3C1F6 /* ContentView.swift */; };
-		63ADFB0225D2547200C3C1F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ADFB0125D2547200C3C1F6 /* Assets.xcassets */; };
-		63ADFB0525D2547200C3C1F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63ADFB0425D2547200C3C1F6 /* Preview Assets.xcassets */; };
+		638C6E2525D256F300746372 /* yelp_for_foodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C6E2425D256F300746372 /* yelp_for_foodApp.swift */; };
+		638C6E2725D256F300746372 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638C6E2625D256F300746372 /* ContentView.swift */; };
+		638C6E2925D256F300746372 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C6E2825D256F300746372 /* Assets.xcassets */; };
+		638C6E2C25D256F300746372 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 638C6E2B25D256F300746372 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63ADFAFA25D2547100C3C1F6 /* spd-1.3-group-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spd-1.3-group-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63ADFAFD25D2547100C3C1F6 /* spd_1_3_group_projectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spd_1_3_group_projectApp.swift; sourceTree = "<group>"; };
-		63ADFAFF25D2547100C3C1F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		63ADFB0125D2547200C3C1F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63ADFB0425D2547200C3C1F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		63ADFB0625D2547200C3C1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		638C6E2125D256F300746372 /* yelp-for-food.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yelp-for-food.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		638C6E2425D256F300746372 /* yelp_for_foodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yelp_for_foodApp.swift; sourceTree = "<group>"; };
+		638C6E2625D256F300746372 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		638C6E2825D256F300746372 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		638C6E2B25D256F300746372 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		638C6E2D25D256F300746372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63ADFAF725D2547100C3C1F6 /* Frameworks */ = {
+		638C6E1E25D256F300746372 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,38 +33,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		63ADFAF125D2547100C3C1F6 = {
+		638C6E1825D256F300746372 = {
 			isa = PBXGroup;
 			children = (
-				63ADFAFC25D2547100C3C1F6 /* spd-1.3-group-project */,
-				63ADFAFB25D2547100C3C1F6 /* Products */,
+				638C6E2325D256F300746372 /* yelp-for-food */,
+				638C6E2225D256F300746372 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		63ADFAFB25D2547100C3C1F6 /* Products */ = {
+		638C6E2225D256F300746372 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				63ADFAFA25D2547100C3C1F6 /* spd-1.3-group-project.app */,
+				638C6E2125D256F300746372 /* yelp-for-food.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		63ADFAFC25D2547100C3C1F6 /* spd-1.3-group-project */ = {
+		638C6E2325D256F300746372 /* yelp-for-food */ = {
 			isa = PBXGroup;
 			children = (
-				63ADFAFD25D2547100C3C1F6 /* spd_1_3_group_projectApp.swift */,
-				63ADFAFF25D2547100C3C1F6 /* ContentView.swift */,
-				63ADFB0125D2547200C3C1F6 /* Assets.xcassets */,
-				63ADFB0625D2547200C3C1F6 /* Info.plist */,
-				63ADFB0325D2547200C3C1F6 /* Preview Content */,
+				638C6E2425D256F300746372 /* yelp_for_foodApp.swift */,
+				638C6E2625D256F300746372 /* ContentView.swift */,
+				638C6E2825D256F300746372 /* Assets.xcassets */,
+				638C6E2D25D256F300746372 /* Info.plist */,
+				638C6E2A25D256F300746372 /* Preview Content */,
 			);
-			path = "spd-1.3-group-project";
+			path = "yelp-for-food";
 			sourceTree = "<group>";
 		};
-		63ADFB0325D2547200C3C1F6 /* Preview Content */ = {
+		638C6E2A25D256F300746372 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				63ADFB0425D2547200C3C1F6 /* Preview Assets.xcassets */,
+				638C6E2B25D256F300746372 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -72,38 +72,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		63ADFAF925D2547100C3C1F6 /* spd-1.3-group-project */ = {
+		638C6E2025D256F300746372 /* yelp-for-food */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63ADFB0925D2547200C3C1F6 /* Build configuration list for PBXNativeTarget "spd-1.3-group-project" */;
+			buildConfigurationList = 638C6E3025D256F300746372 /* Build configuration list for PBXNativeTarget "yelp-for-food" */;
 			buildPhases = (
-				63ADFAF625D2547100C3C1F6 /* Sources */,
-				63ADFAF725D2547100C3C1F6 /* Frameworks */,
-				63ADFAF825D2547100C3C1F6 /* Resources */,
+				638C6E1D25D256F300746372 /* Sources */,
+				638C6E1E25D256F300746372 /* Frameworks */,
+				638C6E1F25D256F300746372 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "spd-1.3-group-project";
-			productName = "spd-1.3-group-project";
-			productReference = 63ADFAFA25D2547100C3C1F6 /* spd-1.3-group-project.app */;
+			name = "yelp-for-food";
+			productName = "yelp-for-food";
+			productReference = 638C6E2125D256F300746372 /* yelp-for-food.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		63ADFAF225D2547100C3C1F6 /* Project object */ = {
+		638C6E1925D256F300746372 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					63ADFAF925D2547100C3C1F6 = {
+					638C6E2025D256F300746372 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 63ADFAF525D2547100C3C1F6 /* Build configuration list for PBXProject "spd-1.3-group-project" */;
+			buildConfigurationList = 638C6E1C25D256F300746372 /* Build configuration list for PBXProject "yelp-for-food" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,42 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 63ADFAF125D2547100C3C1F6;
-			productRefGroup = 63ADFAFB25D2547100C3C1F6 /* Products */;
+			mainGroup = 638C6E1825D256F300746372;
+			productRefGroup = 638C6E2225D256F300746372 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				63ADFAF925D2547100C3C1F6 /* spd-1.3-group-project */,
+				638C6E2025D256F300746372 /* yelp-for-food */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		63ADFAF825D2547100C3C1F6 /* Resources */ = {
+		638C6E1F25D256F300746372 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63ADFB0525D2547200C3C1F6 /* Preview Assets.xcassets in Resources */,
-				63ADFB0225D2547200C3C1F6 /* Assets.xcassets in Resources */,
+				638C6E2C25D256F300746372 /* Preview Assets.xcassets in Resources */,
+				638C6E2925D256F300746372 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		63ADFAF625D2547100C3C1F6 /* Sources */ = {
+		638C6E1D25D256F300746372 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63ADFB0025D2547100C3C1F6 /* ContentView.swift in Sources */,
-				63ADFAFE25D2547100C3C1F6 /* spd_1_3_group_projectApp.swift in Sources */,
+				638C6E2725D256F300746372 /* ContentView.swift in Sources */,
+				638C6E2525D256F300746372 /* yelp_for_foodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		63ADFB0725D2547200C3C1F6 /* Debug */ = {
+		638C6E2E25D256F300746372 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -207,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		63ADFB0825D2547200C3C1F6 /* Release */ = {
+		638C6E2F25D256F300746372 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -262,42 +262,42 @@
 			};
 			name = Release;
 		};
-		63ADFB0A25D2547200C3C1F6 /* Debug */ = {
+		638C6E3125D256F300746372 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"spd-1.3-group-project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"yelp-for-food/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "spd-1.3-group-project/Info.plist";
+				INFOPLIST_FILE = "yelp-for-food/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.spd-1-3-group-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.yelp-for-food";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		63ADFB0B25D2547200C3C1F6 /* Release */ = {
+		638C6E3225D256F300746372 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"spd-1.3-group-project/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"yelp-for-food/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "spd-1.3-group-project/Info.plist";
+				INFOPLIST_FILE = "yelp-for-food/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.spd-1-3-group-project";
+				PRODUCT_BUNDLE_IDENTIFIER = "Make-School.yelp-for-food";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63ADFAF525D2547100C3C1F6 /* Build configuration list for PBXProject "spd-1.3-group-project" */ = {
+		638C6E1C25D256F300746372 /* Build configuration list for PBXProject "yelp-for-food" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63ADFB0725D2547200C3C1F6 /* Debug */,
-				63ADFB0825D2547200C3C1F6 /* Release */,
+				638C6E2E25D256F300746372 /* Debug */,
+				638C6E2F25D256F300746372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63ADFB0925D2547200C3C1F6 /* Build configuration list for PBXNativeTarget "spd-1.3-group-project" */ = {
+		638C6E3025D256F300746372 /* Build configuration list for PBXNativeTarget "yelp-for-food" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63ADFB0A25D2547200C3C1F6 /* Debug */,
-				63ADFB0B25D2547200C3C1F6 /* Release */,
+				638C6E3125D256F300746372 /* Debug */,
+				638C6E3225D256F300746372 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 63ADFAF225D2547100C3C1F6 /* Project object */;
+	rootObject = 638C6E1925D256F300746372 /* Project object */;
 }
