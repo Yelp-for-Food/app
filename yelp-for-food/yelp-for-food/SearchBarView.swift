@@ -31,11 +31,6 @@ struct SearchBarView: View {
             .background(Color.white)
             .cornerRadius(25)
             .shadow(color: Color(.black).opacity(0.15), radius: 4, x: 4, y: 8)
-            
-        
-        
-            
-        
         
     }
 }
