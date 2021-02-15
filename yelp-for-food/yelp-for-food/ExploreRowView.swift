@@ -9,16 +9,18 @@ import SwiftUI
 
 struct ExploreRowView: View {
     var body: some View {
-          VStack {
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 20) {
-                    ForEach(exploreCardData) { item in
-                        ExploreCardView(exploreCard: item)
+        
+            VStack {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 20) {
+                        ForEach(exploreCardData) { item in
+                            ExploreCardView(exploreCard: item)
+                        }
                     }
+                    .padding(20)
                 }
-                .padding(20)
             }
-          }
+        
         
         
     }
@@ -35,12 +37,14 @@ struct ExploreCardView: View {
     var exploreCard : ExploreCard
     
     var body: some View {
+        
+        //        NavigationView {
         VStack {
             Image(exploreCard.image)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: 200)
-
+            
             VStack{
                 HStack {
                     Text(exploreCard.title)
@@ -53,23 +57,42 @@ struct ExploreCardView: View {
                 }
                 .padding(.bottom, 10)
                 .foregroundColor(Color(#colorLiteral(red: 0.3529411765, green: 0.3529411765, blue: 0.3529411765, alpha: 1)))
-
-
-                Button(action: {}) {
-                    Text("read more")
-                        .font(.subheadline)
-                }
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.system(size: 16.0))
+                
+                
+                NavigationLink(
+                    destination: DetailPageView(),
+                    label: {
+                        Text("read more")
+                            .font(.subheadline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.system(size: 16.0))
+                            .foregroundColor(.blue)
+                    }
+                    
+                )
+                
+                
+                // Button(action: {}) {
+                //     Text("read more")
+                //         .font(.subheadline)
+                // }
+                //  .frame(maxWidth: .infinity, alignment: .leading)
+                //  .font(.system(size: 16.0))
+                
+                
+                
+                
             }.padding()
-
+            
         }
         .frame(width: 275, height: 275)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(color: Color(.black).opacity(0.15), radius: 4, x: 4, y: 8)
-
     }
+    //    }
+    
+    
 }
 
 

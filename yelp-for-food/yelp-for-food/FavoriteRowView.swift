@@ -58,10 +58,22 @@ struct FavoriteCardView: View {
                     
                 Spacer()
                 
-                Button(action: {}) {
-                    Text("read more")
-                        .font(.subheadline)
-                }
+                NavigationLink(
+                    destination: DetailPageView(),
+                    label: {
+                        Text("read more")
+                            .font(.subheadline)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .font(.system(size: 16.0))
+                            .foregroundColor(.blue)
+                    }
+                    
+                )
+                
+//                Button(action: {}) {
+//                    Text("read more")
+//                        .font(.subheadline)
+//                }
                 
             }
             .padding(.vertical,10)
