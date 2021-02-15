@@ -11,15 +11,31 @@ struct SearchBarView: View {
     @State private var text: String = ""
     
     var body: some View {
-        HStack{
-        TextField("Search for food", text: $text)
-            .font(Font.system(size: 25, weight: .semibold))
-            .frame(width: 350, height: 50)
-            .multilineTextAlignment(TextAlignment.center)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+        
+            HStack(spacing:12){
+                TextField(" Search for food", text: $text)
+                    .frame(maxWidth: .infinity)
+                    .padding(.leading, 15)
+                    .font(Font.system(size: 18, weight: .semibold))
+                    
+                
+                Button(action: {}) {
+                    Image(systemName: "magnifyingglass")
+                        .padding(.trailing, 15)
+                        
+                }
+                
+            }
+            .frame(width: 330, height: 50, alignment: .leading)
+            .foregroundColor(.gray)
+            .background(Color.white)
+            .cornerRadius(25)
+            .shadow(color: Color(.black).opacity(0.15), radius: 4, x: 4, y: 8)
+            
         
         
-        }
+            
+        
         
     }
 }

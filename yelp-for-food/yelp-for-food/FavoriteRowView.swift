@@ -36,7 +36,7 @@ struct FavoriteCardView: View {
         HStack {
             Image(favoriteCard.image)
                 .resizable()
-                .frame(width: 150, height: .infinity)
+                .frame(width: 160, height: .infinity)
                 .aspectRatio(contentMode: .fit)
                 .clipped()
             
@@ -66,7 +66,7 @@ struct FavoriteCardView: View {
             }
             .padding(.vertical,10)
         }
-        .frame(maxWidth: 300, maxHeight: 175)
+        .frame(maxWidth: 320, maxHeight: 175)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(color: Color(.black).opacity(0.15), radius: 4, x: 4, y: 8)
