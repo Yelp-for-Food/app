@@ -60,7 +60,10 @@ struct ExploreCardView: View {
                 
                 
                 NavigationLink(
-                    destination: DetailPageView(),
+                    destination: DetailPageView(title: exploreCard.title,
+                                                text: exploreCard.text,
+                                                image: exploreCard.image,
+                                                ratting: exploreCard.rattings),
                     label: {
                         Text("read more")
                             .font(.subheadline)
@@ -70,17 +73,6 @@ struct ExploreCardView: View {
                     }
                     
                 )
-                
-                
-                // Button(action: {}) {
-                //     Text("read more")
-                //         .font(.subheadline)
-                // }
-                //  .frame(maxWidth: .infinity, alignment: .leading)
-                //  .font(.system(size: 16.0))
-                
-                
-                
                 
             }.padding()
             
@@ -106,7 +98,7 @@ struct ExploreCard: Identifiable {
 
 
 let exploreCardData = [
-    ExploreCard(title: "Taco", text: "some text will go here for the food item", image: "gray", rattings: 1),
+    ExploreCard(title: "Taco", text: "A taco is a traditional Mexican dish consisting of a small hand sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese, allowing for great versatility and variety. ", image: "gray", rattings: 1),
     ExploreCard(title: "Burger", text: "some text will go here for the food item", image: "gray", rattings: 2),
     ExploreCard(title: "Suchi", text: "some text will go here for the food item", image: "gray", rattings: 3),
     ExploreCard(title: "Beef", text: "some text will go here for the food item", image: "gray", rattings: 4),

@@ -23,7 +23,7 @@ struct HomePage: View {
                 
                 FavoriteRowView()
                 
-            }
+            }.navigationTitle("Yelp-for-Food")
         }
     }
 }

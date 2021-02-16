@@ -59,7 +59,10 @@ struct FavoriteCardView: View {
                 Spacer()
                 
                 NavigationLink(
-                    destination: DetailPageView(),
+                    destination: DetailPageView(title: favoriteCard.title,
+                                                text: favoriteCard.text,
+                                                image: favoriteCard.image,
+                                                ratting: favoriteCard.rattings),
                     label: {
                         Text("read more")
                             .font(.subheadline)
@@ -97,7 +100,7 @@ struct FavoriteCard: Identifiable {
 }
 
 var favoriteCardData = [
-    FavoriteCard(title: "Taco", text: "some text will go here for the food item", image: "gray", rattings: 1),
+    FavoriteCard(title: "Taco", text: "A taco is a traditional Mexican dish consisting of a small hand sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese, allowing for great versatility and variety. ", image: "gray", rattings: 1),
     FavoriteCard(title: "Burger", text: "some text will go here for the food item", image: "gray", rattings: 2),
     FavoriteCard(title: "Suchi", text: "some text will go here for the food item", image: "gray", rattings: 3),
     FavoriteCard(title: "Beef", text: "some text will go here for the food item", image: "gray", rattings: 4),
