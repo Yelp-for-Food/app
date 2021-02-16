@@ -11,19 +11,16 @@ struct HomePage: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                SearchBarView()
-                //            Image("gray")
-                //                .resizable()
-                //                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                //                .
+                VStack(spacing: 10){
+                    TopView()
+                    HeaderView(header: "Explore")
+                    ExploreRowView()
+                    HeaderView(header: "Favorite")
+                    FavoriteRowView()
+                }
                 
-                ExploreRowView()
-                //            .edgesIgnoringSafeArea(.all)
-                //            .offset(y: -50)
-                
-                FavoriteRowView()
-                
-            }.navigationTitle("Yelp-for-Food")
+            }.ignoresSafeArea()
+            //.navigationTitle("Yelp-for-food")
         }
     }
 }

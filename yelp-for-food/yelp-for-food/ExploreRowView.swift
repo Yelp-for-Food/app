@@ -10,7 +10,8 @@ import SwiftUI
 struct ExploreRowView: View {
     var body: some View {
         
-            VStack {
+        VStack() {
+                
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
                         ForEach(exploreCardData) { item in

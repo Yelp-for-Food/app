@@ -28,7 +28,6 @@ struct FavoriteRowView_Previews: PreviewProvider {
 }
 
 
-
 struct FavoriteCardView: View {
     var favoriteCard : FavoriteCard
     
