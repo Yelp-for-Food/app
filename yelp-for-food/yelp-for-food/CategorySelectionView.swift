@@ -15,7 +15,7 @@ struct CategorySelectionView: View {
             ForEach(0..<CategoryCell.row){ i in
                 HStack{
                     ForEach(0..<CategoryCell.column){ j in
-                        CategoryCell()
+                        //CategoryCell()
                     }
                 }
             }
