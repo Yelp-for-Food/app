@@ -1,5 +1,5 @@
 //
-//  LoginPage.swift
+//  SignupPage.swift
 //  yelp-for-food
 //
 //  Created by Alberto Dominguez on 2/24/21.
@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct LoginPage: View {
+struct SignupPage: View {
     var body: some View {
-        VStack(spacing: 10){
+        VStack(spacing: 0){
+            LoginForm(header: "Full Name", placeholder: "Johnny Bravo")
             LoginForm(header: "Email", placeholder: "Johnny.Bravo@gmail.com")
             LoginForm(header: "Password", placeholder: "********")
+            LoginForm(header: "Confirm Password", placeholder: "********")
             
             Button(action: {}) {
                 Text("Login")
@@ -22,42 +24,18 @@ struct LoginPage: View {
                     .cornerRadius(15)
             }
             
-            Text("Don't have an account? SugnUp")
+            Text("Alreadyt have an account? Login")
                 .padding(.top, 0)
         }
-        .frame(width: screen.width-30, height: 400)
+        .frame(width: screen.width-30, height: 550)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(color: Color(.black).opacity(0.25), radius: 25, x: 4, y: 8)
     }
 }
 
-struct LoginPage_Previews: PreviewProvider {
+struct SignupPage_Previews: PreviewProvider {
     static var previews: some View {
-        LoginPage()
+        SignupPage()
     }
 }
-
-
-
-struct LoginForm: View {
-    @State private var text = ""
-    @State var header: String
-    @State var placeholder: String
-
-    var body: some View {
-        VStack {
-            HStack {
-                Text(self.header)
-                    .font(Font.system(size: 18, weight: .regular))
-                    .foregroundColor(Color(#colorLiteral(red: 0.3529411765, green: 0.3529411765, blue: 0.3529411765, alpha: 1)))
-                    
-                Spacer()
-            }
-            TextField(self.placeholder, text: $text)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-        }.padding()
-    }
-}
-
-let screen = UIScreen.main.bounds
