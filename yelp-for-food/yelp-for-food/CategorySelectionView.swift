@@ -10,18 +10,19 @@ import SwiftUI
 struct CategorySelectionView: View {
     
     var body: some View {
-        
-        ScrollView{
-            ForEach(0..<CategoryCell.row){ i in
-                HStack{
-                    ForEach(0..<CategoryCell.column){ j in
-                        CategoryCell()
+        NavigationView{
+            ScrollView{
+                ForEach(0..<CategoryCell.row){ i in
+                    HStack{
+                        ForEach(0..<CategoryCell.column){ j in
+                            CategoryCell()
+                        }
                     }
                 }
-            }
+            }.navigationBarTitle("Categories")
+            
         }
     }
-    
 }
 
 struct CategorySelectionView_Previews: PreviewProvider {
@@ -32,19 +33,19 @@ struct CategorySelectionView_Previews: PreviewProvider {
 
 
 struct CategoryCell: View {
-    var category: Category
+    //    var category: Category
     static let column = 2
     static let row = 12
     let width = (UIScreen.main.bounds.width / 2)-20
     var body: some View {
         ZStack{
-            
             Image("gray")
                 .resizable()
                 .frame(width: width, height: width)
                 .cornerRadius(10, antialiased: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
             
-            Text("\(category.name)")
+            //            Text("\(category.name)")
+            Text("Hello")
                 .offset(y: 50)
         }
     }
