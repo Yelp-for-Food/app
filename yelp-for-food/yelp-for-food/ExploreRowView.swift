@@ -109,18 +109,18 @@ let exploreCardData = [
                 image: "https://www.berkeleyside.com/wp-content/uploads/2017/03/kronnerburger.jpg",
                 rattings: 2),
     
-    ExploreCard(title: "Suchi",
-                text: "some text will go here for the food item",
+    ExploreCard(title: "Sushi",
+                text: "Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.",
                 image: "https://st2.depositphotos.com/1000604/7802/i/600/depositphotos_78027540-stock-photo-sushi-rolls.jpg",
                 rattings: 3),
     
-    ExploreCard(title: "Beef",
-                text: "some text will go here for the food item",
+    ExploreCard(title: "Steak",
+                text: "A steak is a meat generally sliced across the muscle fibers, potentially including a bone. It is normally grilled, though can also be pan-fried. It is often grilled in an attempt to replicate the flavor of steak cooked over the glowing coals of an open fire.",
                 image: "https://cdn.shopify.com/s/files/1/0027/9645/3961/products/Beef_Rib_Eye_shopify_1200x.jpg?v=1539137742",
                 rattings: 4),
     
     ExploreCard(title: "Ribs",
-                text: "some text will go here for the food item",
+                text: "Ribs are served as a rack of meat which diners customarily tear apart by hand, then eat the meat from the bone.",
                 image: "https://i.pinimg.com/originals/5d/1d/d4/5d1dd49be7c5e23a2c7fda4c3a6a6ee0.jpg",
                 rattings: 5)
 ]

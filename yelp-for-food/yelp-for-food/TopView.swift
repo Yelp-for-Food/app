@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TopView: View {
+    @State var image: String
+    
     var body: some View {
         
         VStack {
-            Image("IPU-logo-3")
+            Image(self.image)
                 .resizable()
                 .frame(width: .infinity, height: 215)
                 .aspectRatio(contentMode: .fit)
@@ -26,6 +28,6 @@ struct TopView: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        TopView()
+        TopView(image: "IPU-logo-3")
     }
 }
