@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct DetailPageView: View {
-    @State private var rattingEntered: Int?
+    @State private var ratingEntered: Int?
     
     @State var title: String!
     @State var text: String!
     @State var image: String!
-    @State var ratting: Double!
+    @State var rating: Double!
     
     var body: some View {
         
@@ -31,7 +31,7 @@ struct DetailPageView: View {
                     
                     Spacer()
                     
-                    StarsView(ratting: self.ratting)
+                    StarsView(rating: self.rating)
                 }.padding(.horizontal, 20)
                 
                 Text(self.text)
@@ -56,10 +56,10 @@ struct DetailPageView: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(#colorLiteral(red: 0.3529411765, green: 0.3529411765, blue: 0.3529411765, alpha: 1)))
                     
-                    RatingView(ratting: $rattingEntered)
+                    RatingView(rating: $ratingEntered)
                     
                     Button(action: {}) {
-                        Text("Submit ratting")
+                        Text("Submit rating")
                             .frame(width: 250, height: 55, alignment: .center)
                             .background(Color(#colorLiteral(red: 0.9960784314, green: 0.7411764706, blue: 0.03529411765, alpha: 1)))
                             .foregroundColor(.white)
@@ -87,7 +87,7 @@ struct DetailPageView_Previews: PreviewProvider {
         DetailPageView(title: "Taco's",
                        text: "lskd fjwoifj aoij owij oi woweiu oi hwoi foi vfh oiwhkEJVOIH fvlskd fjwoifj aoij owij oi woweiu oi hwoi foidj o ioi oweo po ijcmoeifj iewoei mcoej p ddep kjfoej foiwj kgnvkfjoqrujo kowie jaoir",
                        image: "gray",
-                       ratting: 4)
+                       rating: 4)
     }
 }
 

@@ -61,7 +61,7 @@ struct ExploreCardView: View {
                         .lineLimit(2)
                     Spacer()
                     
-                    StarsView(ratting: 3)
+                    StarsView(rating: 3)
                 }
                 .padding(.bottom, 10)
                 .foregroundColor(Color(#colorLiteral(red: 0.3529411765, green: 0.3529411765, blue: 0.3529411765, alpha: 1)))
@@ -71,7 +71,7 @@ struct ExploreCardView: View {
                     destination: DetailPageView(title: exploreCard.name,
                                                 text: exploreCard.description,
                                                 image: exploreCard.thumb,
-                                                ratting: 3),
+                                                rating: 3),
                     label: {
                         Text("read more")
                             .font(.subheadline)
