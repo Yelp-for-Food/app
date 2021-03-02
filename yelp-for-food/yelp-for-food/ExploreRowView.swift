@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ExploreRowView: View {
+    @State var posts: [Post] = []
+    
     var body: some View {
         
         VStack() {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        ForEach(exploreCardData) { item in
+                        ForEach(posts) { item in
                             ExploreCardView(exploreCard: item)
                         }
                     }
                     .padding(20)
+                }
+            }.onAppear {
+                Api().getPosts { (posts) in
+                    print("test")
+                    self.posts = posts
                 }
             }
         
@@ -35,36 +42,36 @@ struct ExploreRowView_Previews: PreviewProvider {
 
 
 struct ExploreCardView: View {
-    var exploreCard : ExploreCard
+    var exploreCard : Post
     
     var body: some View {
         
         //        NavigationView {
         VStack {
-            Image(uiImage: exploreCard.image.load())
+            Image(uiImage: exploreCard.thumb.load())
                 .resizable()
                 .aspectRatio(contentMode: .fill)
-                .frame(maxWidth: .infinity, maxHeight: 200)
+                .frame(idealWidth: .infinity, idealHeight: 200)
             
             VStack{
                 HStack {
-                    Text(exploreCard.title)
+                    Text(exploreCard.name)
                         .font(.system(size: 18.0))
                         .fontWeight(.bold)
                         .lineLimit(2)
                     Spacer()
                     
-                    StarsView(ratting: exploreCard.rattings)
+                    StarsView(ratting: 3)
                 }
                 .padding(.bottom, 10)
                 .foregroundColor(Color(#colorLiteral(red: 0.3529411765, green: 0.3529411765, blue: 0.3529411765, alpha: 1)))
                 
                 
                 NavigationLink(
-                    destination: DetailPageView(title: exploreCard.title,
-                                                text: exploreCard.text,
-                                                image: exploreCard.image,
-                                                ratting: exploreCard.rattings),
+                    destination: DetailPageView(title: exploreCard.name,
+                                                text: exploreCard.description,
+                                                image: exploreCard.thumb,
+                                                ratting: 3),
                     label: {
                         Text("read more")
                             .font(.subheadline)
@@ -78,53 +85,35 @@ struct ExploreCardView: View {
             }.padding()
             
         }
-        .frame(width: 275, height: 275)
+        .frame(width: 275, height: 375)
         .background(Color.white)
         .cornerRadius(10)
         .shadow(color: Color(.black).opacity(0.15), radius: 4, x: 4, y: 8)
     }
-    //    }
     
     
 }
 
-
-struct ExploreCard: Identifiable {
-    var id = UUID()
-    var title: String
-    var text: String
-    var image: String
-    var rattings: Double
+struct Post: Codable, Identifiable {
+    let id = UUID()
+    var name: String
+    var thumb: String
+    var description: String
 }
 
+class Api {
+    func getPosts(completion: @escaping ([Post]) -> ()) {
+        let url = URL(string: "https://ipu.dejay.dev/meals")!
 
-let exploreCardData = [
-    ExploreCard(title: "Taco",
-                text: "A taco is a traditional Mexican dish consisting of a small hand sized corn or wheat tortilla topped with a filling. The tortilla is then folded around the filling and eaten by hand. A taco can be made with a variety of fillings, including beef, pork, chicken, seafood, beans, vegetables, and cheese, allowing for great versatility and variety. ",
-                image: "https://media1.fdncms.com/pittsburgh/imager/u/blog/3373151/side_27.jpg?cb=1568227857",
-                rattings: 1),
-    
-    ExploreCard(title: "Burger",
-                text: "A hamburger (also burger for short) is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled.",
-                image: "https://www.berkeleyside.com/wp-content/uploads/2017/03/kronnerburger.jpg",
-                rattings: 2),
-    
-    ExploreCard(title: "Sushi",
-                text: "Sushi, a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of vegetable, egg, or raw seafood garnishes and served cold.",
-                image: "https://st2.depositphotos.com/1000604/7802/i/600/depositphotos_78027540-stock-photo-sushi-rolls.jpg",
-                rattings: 3),
-    
-    ExploreCard(title: "Steak",
-                text: "A steak is a meat generally sliced across the muscle fibers, potentially including a bone. It is normally grilled, though can also be pan-fried. It is often grilled in an attempt to replicate the flavor of steak cooked over the glowing coals of an open fire.",
-                image: "https://cdn.shopify.com/s/files/1/0027/9645/3961/products/Beef_Rib_Eye_shopify_1200x.jpg?v=1539137742",
-                rattings: 4),
-    
-    ExploreCard(title: "Ribs",
-                text: "Ribs are served as a rack of meat which diners customarily tear apart by hand, then eat the meat from the bone.",
-                image: "https://i.pinimg.com/originals/5d/1d/d4/5d1dd49be7c5e23a2c7fda4c3a6a6ee0.jpg",
-                rattings: 5)
-]
+        URLSession.shared.dataTask(with: url) { (data, _, _) in
 
-
-
+            let posts = try! JSONDecoder().decode([Post].self, from: data!)
+            print(posts.count)
+            DispatchQueue.main.async {
+                completion(posts)
+            }
+        }
+        .resume()
+    }
+}
 

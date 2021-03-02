@@ -60,4 +60,4 @@ struct LoginForm: View {
     }
 }
 
-let screen = UIScreen.main.bounds
+var screen = UIScreen.main.bounds

@@ -35,7 +35,7 @@ struct FavoriteCardView: View {
         HStack {
             Image(uiImage: favoriteCard.image.load())
                 .resizable()
-                .frame(width: 160, height: .infinity)
+                .frame(width: 160, height: 175)
                 .aspectRatio(contentMode: .fit)
                 .clipped()
             

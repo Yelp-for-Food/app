@@ -12,16 +12,18 @@ struct TopView: View {
     
     var body: some View {
         
-        VStack {
-            Image(self.image)
-                .resizable()
-                .frame(width: .infinity, height: 215)
-                .aspectRatio(contentMode: .fit)
-            
-            SearchBarView()
-                .offset(y:-25)
-            Spacer()
-        }.ignoresSafeArea()
+            VStack {
+                
+                Image(self.image)
+                    .resizable()
+                    .frame(width: screenWidth, height: 215)
+                    .aspectRatio(contentMode: .fit)
+                
+                SearchBarView()
+                    .offset(y:-25)
+                Spacer()
+            }.ignoresSafeArea()
+        
        
     }
 }
@@ -31,3 +33,6 @@ struct SwiftUIView_Previews: PreviewProvider {
         TopView(image: "IPU-logo-3")
     }
 }
+
+
+let screenWidth = UIScreen.main.bounds.width

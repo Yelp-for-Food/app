@@ -18,7 +18,7 @@ struct HeaderView: View {
             Spacer()
             
         }.padding(.horizontal, 20)
-        .frame(width: .infinity, height: 45, alignment: .leading)
+        .frame(width: headerWidth, height: 45, alignment: .leading)
         
     }
 }
@@ -28,3 +28,5 @@ struct HeaderView_Previews: PreviewProvider {
         HeaderView(header: "Explore")
     }
 }
+
+let headerWidth = UIScreen.main.bounds.width

@@ -14,7 +14,9 @@ struct HomePage: View {
                 VStack(spacing: 10){
                     TopView(image: "IPU-logo-2")
                     HeaderView(header: "Explore")
+                    
                     ExploreRowView()
+                    
                     HeaderView(header: "Favorite")
                     FavoriteRowView()
                 }

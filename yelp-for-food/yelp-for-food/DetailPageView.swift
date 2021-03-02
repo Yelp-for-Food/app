@@ -21,7 +21,7 @@ struct DetailPageView: View {
             VStack(spacing: 25) {
                 Image(uiImage: self.image.load())
                     .resizable()
-                    .frame(width: .infinity, height: 265)
+                    .frame(width: detailScreen.width, height: 265)
                     
                 HStack {
                     Text(self.title)
@@ -90,3 +90,5 @@ struct DetailPageView_Previews: PreviewProvider {
                        ratting: 4)
     }
 }
+
+let detailScreen = UIScreen.main.bounds
