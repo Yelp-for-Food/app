@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ExploreRowView: View {
-    @State var posts: [Post] = []
+    //@State var posts: [Post] = []
+    @ObservedObject var store = DataStore()
     
     var body: some View {
         
@@ -16,18 +17,19 @@ struct ExploreRowView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 20) {
-                        ForEach(posts) { item in
+                        ForEach(store.posts) { item in
                             ExploreCardView(exploreCard: item)
                         }
                     }
                     .padding(20)
                 }
-            }.onAppear {
-                Api().getPosts { (posts) in
-                    print("test")
-                    self.posts = posts
-                }
             }
+//        .onAppear {
+//                Api().getPosts { (posts) in
+//                    print("test")
+//                    self.posts = posts
+//                }
+//            }
         
         
         

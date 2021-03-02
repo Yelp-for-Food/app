@@ -38,7 +38,7 @@ struct DetailPageView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 20)
                             
-                Button(action: {}) {
+                Button(action: {addFavorite()}) {
                     Text("Add to Favorites")
                         .frame(width: 250, height: 55, alignment: .center)
                         .background(Color(#colorLiteral(red: 0.9960784314, green: 0.7411764706, blue: 0.03529411765, alpha: 1)))
@@ -74,6 +74,16 @@ struct DetailPageView: View {
             }
         }.ignoresSafeArea()
         
+    }
+    
+    
+    func addFavorite(){
+        print("add favorite")
+        let newFavorite = FavoriteCard(title: self.title, text: self.text, image: self.image, ratings: self.rating)
+        
+        print(favoriteCardData.count)
+        favoriteCardData.append(newFavorite)
+        print(favoriteCardData.count)
     }
 }
 
