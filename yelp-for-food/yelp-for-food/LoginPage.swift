@@ -23,7 +23,7 @@ struct LoginPage: View {
             }
             
             Text("Don't have an account? SugnUp")
-                .padding(.top, 0)
+                .padding(.top, 10)
         }
         .frame(width: screen.width-30, height: 400)
         .background(Color.white)

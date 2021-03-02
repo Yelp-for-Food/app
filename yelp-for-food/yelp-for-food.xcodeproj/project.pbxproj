@@ -17,6 +17,7 @@
 		6396F8CD25D32BE500D77057 /* ExploreRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396F8CC25D32BE500D77057 /* ExploreRowView.swift */; };
 		6396F8D425D3705600D77057 /* FavoriteRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396F8D325D3705600D77057 /* FavoriteRowView.swift */; };
 		6396F8D725D374BB00D77057 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396F8D625D374BB00D77057 /* StarsView.swift */; };
+		63A19F7E25EDE642003D1CAC /* url-image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A19F7D25EDE642003D1CAC /* url-image.swift */; };
 		63AE7AA925E70334004D7251 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE7AA825E70334004D7251 /* LoginPage.swift */; };
 		63AE7AAE25E70784004D7251 /* SignupPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AE7AAD25E70784004D7251 /* SignupPage.swift */; };
 		63B0508E25DB10F100FBF8C9 /* DetailPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B0508D25DB10F100FBF8C9 /* DetailPageView.swift */; };
@@ -38,6 +39,7 @@
 		6396F8CC25D32BE500D77057 /* ExploreRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreRowView.swift; sourceTree = "<group>"; };
 		6396F8D325D3705600D77057 /* FavoriteRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRowView.swift; sourceTree = "<group>"; };
 		6396F8D625D374BB00D77057 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		63A19F7D25EDE642003D1CAC /* url-image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "url-image.swift"; sourceTree = "<group>"; };
 		63AE7AA825E70334004D7251 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
 		63AE7AAD25E70784004D7251 /* SignupPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPage.swift; sourceTree = "<group>"; };
 		63B0508D25DB10F100FBF8C9 /* DetailPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				638C6E2825D256F300746372 /* Assets.xcassets */,
 				638C6E2D25D256F300746372 /* Info.plist */,
 				638C6E2A25D256F300746372 /* Preview Content */,
+				63A19F7D25EDE642003D1CAC /* url-image.swift */,
 			);
 			path = "yelp-for-food";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				63AE7AA925E70334004D7251 /* LoginPage.swift in Sources */,
 				6396F8CD25D32BE500D77057 /* ExploreRowView.swift in Sources */,
 				638C6E2525D256F300746372 /* yelp_for_foodApp.swift in Sources */,
+				63A19F7E25EDE642003D1CAC /* url-image.swift in Sources */,
 				63DD458425DC7CDC00C2EBBC /* HeaderView.swift in Sources */,
 				63AE7AAE25E70784004D7251 /* SignupPage.swift in Sources */,
 				624C143D25DA0D10004FC88E /* SearchBarView.swift in Sources */,

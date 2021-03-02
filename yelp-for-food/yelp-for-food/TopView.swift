@@ -11,7 +11,7 @@ struct TopView: View {
     var body: some View {
         
         VStack {
-            Image("gray")
+            Image("IPU-logo-3")
                 .resizable()
                 .frame(width: .infinity, height: 215)
                 .aspectRatio(contentMode: .fit)

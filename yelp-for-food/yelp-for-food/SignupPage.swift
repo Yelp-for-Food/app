@@ -25,7 +25,7 @@ struct SignupPage: View {
             }
             
             Text("Alreadyt have an account? Login")
-                .padding(.top, 0)
+                .padding(.top, 10)
         }
         .frame(width: screen.width-30, height: 550)
         .background(Color.white)

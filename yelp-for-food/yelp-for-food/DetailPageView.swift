@@ -19,7 +19,7 @@ struct DetailPageView: View {
         
         ScrollView {
             VStack(spacing: 25) {
-                Image(self.image)
+                Image(uiImage: self.image.load())
                     .resizable()
                     .frame(width: .infinity, height: 265)
                     
