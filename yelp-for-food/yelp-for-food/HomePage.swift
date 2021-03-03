@@ -26,6 +26,9 @@ struct HomePage: View {
             }.ignoresSafeArea()
             //.navigationTitle("Yelp-for-food")
         }.environmentObject(favs)
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
     }
 }
 

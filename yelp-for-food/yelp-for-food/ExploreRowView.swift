@@ -24,9 +24,6 @@ struct ExploreRowView: View {
         }
         .onAppear {
         }
-        
-        
-        
     }
 }
 
