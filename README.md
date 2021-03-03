@@ -1,6 +1,6 @@
-# Yelp For Dishes (Working Title)
+# IPU
 
-Yelp For Dishes is a food recommendation/rating app that allows users to rate individual dishes at restaurants, and then aggregates that type of dish across restaurants so users can find the best version of that dish regardless of restaurant.
+IPU is a food recommendation/rating app that allows users to rate individual dishes at restaurants, and then aggregates that type of dish across restaurants so users can find the best version of that dish regardless of restaurant.
 
 ## Languages/Tech Used
 
