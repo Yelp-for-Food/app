@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct DetailPageView: View {
-    @State private var ratingEntered: Int?
+    @EnvironmentObject var globalFavorites: Favorites
     
+    @State private var ratingEntered: Int?
     @State var title: String!
     @State var text: String!
     @State var image: String!
@@ -82,7 +83,7 @@ struct DetailPageView: View {
         let newFavorite = FavoriteCard(title: self.title, text: self.text, image: self.image, ratings: self.rating)
         
         print(favoriteCardData.count)
-        favoriteCardData.append(newFavorite)
+        globalFavorites.items.append(newFavorite)
         print(favoriteCardData.count)
     }
 }

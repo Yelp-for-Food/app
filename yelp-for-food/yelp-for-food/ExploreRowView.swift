@@ -8,28 +8,22 @@
 import SwiftUI
 
 struct ExploreRowView: View {
-    //@State var posts: [Post] = []
     @ObservedObject var store = DataStore()
     
+    
     var body: some View {
-        
         VStack() {
-                
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 20) {
-                        ForEach(store.posts) { item in
-                            ExploreCardView(exploreCard: item)
-                        }
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 20) {
+                    ForEach(store.posts) { item in
+                        ExploreCardView(exploreCard: item)
                     }
-                    .padding(20)
                 }
+                .padding(20)
             }
-//        .onAppear {
-//                Api().getPosts { (posts) in
-//                    print("test")
-//                    self.posts = posts
-//                }
-//            }
+        }
+        .onAppear {
+        }
         
         
         
@@ -106,9 +100,9 @@ struct Post: Codable, Identifiable {
 class Api {
     func getPosts(completion: @escaping ([Post]) -> ()) {
         let url = URL(string: "https://ipu.dejay.dev/meals")!
-
+        
         URLSession.shared.dataTask(with: url) { (data, _, _) in
-
+            
             let posts = try! JSONDecoder().decode([Post].self, from: data!)
             print(posts.count)
             DispatchQueue.main.async {

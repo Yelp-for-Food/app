@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HomePage: View {
+    @StateObject var favs = Favorites()
+    
     var body: some View {
         NavigationView {
             ScrollView {
@@ -23,7 +25,7 @@ struct HomePage: View {
                 
             }.ignoresSafeArea()
             //.navigationTitle("Yelp-for-food")
-        }
+        }.environmentObject(favs)
     }
 }
 
@@ -32,4 +34,8 @@ struct HomePage_Previews: PreviewProvider {
         HomePage()
     }
     
+}
+
+class Favorites: ObservableObject {
+    @Published var items = favoriteCardData
 }

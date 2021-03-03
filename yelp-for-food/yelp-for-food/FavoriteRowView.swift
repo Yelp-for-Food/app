@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct FavoriteRowView: View {
+    @EnvironmentObject var globalFavorites: Favorites
+    
     var body: some View {
         VStack {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 20) {
-                    ForEach(favoriteCardData) { item in
+                    ForEach(globalFavorites.items) { item in
                         FavoriteCardView(favoriteCard: item)
                     }
                 }.padding()
