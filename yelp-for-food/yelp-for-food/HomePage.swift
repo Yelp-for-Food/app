@@ -14,7 +14,7 @@ struct HomePage: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 10){
-                    TopView(image: "IPU-logo-2")
+                    TopView(image: "IPU-logo-4")
                     HeaderView(header: "Explore")
                     
                     ExploreRowView()
